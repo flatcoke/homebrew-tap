@@ -5,21 +5,21 @@
 class Prview < Formula
   desc "GitHub-style git diff viewer in your browser"
   homepage "https://github.com/flatcoke/prview"
-  version "0.3.2"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/flatcoke/prview/releases/download/v0.3.2/prview_0.3.2_darwin_amd64.tar.gz"
-      sha256 "deaf6bafc1d61fc8048e37fa4bb0d631ba7b66a5f4696bb1ff0396190340a0c7"
+      url "https://github.com/flatcoke/prview/releases/download/v0.4.0/prview_0.4.0_darwin_amd64.tar.gz"
+      sha256 "12d0a7c426c839c627f4d7562750473c2764edeb49fc8530ab27aec76f94b149"
 
       define_method(:install) do
         bin.install "prview"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/flatcoke/prview/releases/download/v0.3.2/prview_0.3.2_darwin_arm64.tar.gz"
-      sha256 "269e881a2ecc446695a9ed77150d2119fd07c96fc499f2b6f7afb052e807e97b"
+      url "https://github.com/flatcoke/prview/releases/download/v0.4.0/prview_0.4.0_darwin_arm64.tar.gz"
+      sha256 "692104845b5b5cf2f7ea4dfcdaefce2c94590a9bbafa3e2421097c213ff1fab8"
 
       define_method(:install) do
         bin.install "prview"
@@ -29,15 +29,15 @@ class Prview < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/flatcoke/prview/releases/download/v0.3.2/prview_0.3.2_linux_amd64.tar.gz"
-      sha256 "b17b99a4148a5095b3987341d4bf7d01eb92e074d5db9600c02627672160c50a"
+      url "https://github.com/flatcoke/prview/releases/download/v0.4.0/prview_0.4.0_linux_amd64.tar.gz"
+      sha256 "e0b8a044a2d16d7debbee1f9fd25d9ea8634fec34118556aaeb976880b315d5f"
       define_method(:install) do
         bin.install "prview"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/flatcoke/prview/releases/download/v0.3.2/prview_0.3.2_linux_arm64.tar.gz"
-      sha256 "3b32c2eefb8c06b15a5c44ad231ce906df4e53d82659a4b3e5acaddb40da4604"
+      url "https://github.com/flatcoke/prview/releases/download/v0.4.0/prview_0.4.0_linux_arm64.tar.gz"
+      sha256 "1102394864e3a2c61e6c21c88f6f8598a6fd2ffc70ba9be05f53c0b962e19f70"
       define_method(:install) do
         bin.install "prview"
       end
